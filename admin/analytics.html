@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - ComicVerse Admin</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="admin-sidebar">
+        <div class="sidebar-header">
+            <h4 class="fw-bold mb-0">
+                <i class="bi bi-book-half me-2"></i>ComicVerse Admin
+            </h4>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item">
+                <i class="bi bi-speedometer2 me-2"></i>Dashboard
+            </a>
+            <a href="users.html" class="nav-item">
+                <i class="bi bi-people me-2"></i>Users
+            </a>
+            <a href="comics-upload.html" class="nav-item">
+                <i class="bi bi-upload me-2"></i>Upload Comics
+            </a>
+            <a href="manage-chapters.html" class="nav-item">
+                <i class="bi bi-file-text me-2"></i>Manage Chapters
+            </a>
+            <a href="payments.html" class="nav-item">
+                <i class="bi bi-credit-card me-2"></i>Payments
+            </a>
+            <a href="messages.html" class="nav-item">
+                <i class="bi bi-envelope me-2"></i>Messages
+            </a>
+            <a href="analytics.html" class="nav-item active">
+                <i class="bi bi-graph-up me-2"></i>Analytics
+            </a>
+            <a href="../index.html" class="nav-item">
+                <i class="bi bi-house me-2"></i>Back to Site
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="admin-main">
+        <div class="admin-topbar">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Analytics</h5>
+                <select class="form-select" style="width: 200px;">
+                    <option>Last 7 days</option>
+                    <option>Last 30 days</option>
+                    <option>Last 3 months</option>
+                    <option>Last year</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="admin-content p-4">
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="text-muted mb-2">Total Views</h6>
+                            <h3 class="fw-bold mb-0">1,234,567</h3>
+                            <small class="text-success"><i class="bi bi-arrow-up"></i> 12% from last month</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="text-muted mb-2">New Users</h6>
+                            <h3 class="fw-bold mb-0">5,678</h3>
+                            <small class="text-success"><i class="bi bi-arrow-up"></i> 8% from last month</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="text-muted mb-2">Active Users</h6>
+                            <h3 class="fw-bold mb-0">45,234</h3>
+                            <small class="text-success"><i class="bi bi-arrow-up"></i> 5% from last month</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="text-muted mb-0">Revenue</h6>
+                            <h3 class="fw-bold mb-0">$45,678</h3>
+                            <small class="text-success"><i class="bi bi-arrow-up"></i> 15% from last month</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="fw-bold mb-0">Traffic Overview</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center py-5">
+                                <i class="bi bi-graph-up display-1 text-muted"></i>
+                                <p class="text-muted">Chart visualization would go here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="fw-bold mb-0">Top Comics</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                <div class="list-group-item">
+                                    <div class="d-flex justify-content-between">
+                                        <span>The Adventure Begins</span>
+                                        <strong>125K views</strong>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="d-flex justify-content-between">
+                                        <span>Mystery Quest</span>
+                                        <strong>98K views</strong>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="d-flex justify-content-between">
+                                        <span>Fantasy Realm</span>
+                                        <strong>87K views</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .admin-sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 250px;
+            background: #1e293b;
+            color: white;
+            z-index: 1000;
+        }
+        .sidebar-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .sidebar-nav {
+            padding: 1rem 0;
+        }
+        .nav-item {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .nav-item:hover, .nav-item.active {
+            background: rgba(99, 102, 241, 0.2);
+            color: white;
+        }
+        .admin-main {
+            margin-left: 250px;
+            min-height: 100vh;
+            background: #f8fafc;
+        }
+        .admin-topbar {
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .admin-content {
+            min-height: calc(100vh - 60px);
+        }
+    </style>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
